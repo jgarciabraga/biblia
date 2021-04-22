@@ -12,6 +12,8 @@ import matplotlib
 matplotlib.use('Agg')
 import altair as alt
 
+from utils import plot_word_frequency
+
 @st.cache
 def load_biblia(data):
     df = pd.read_csv(data)
